@@ -1,0 +1,669 @@
+/* Templates Page Styles */
+
+/* Templates Header */
+.templates-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 120px 0 80px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.header-content p {
+    font-size: 20px;
+    opacity: 0.9;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-stats {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 40px;
+}
+
+.header-stats .stat {
+    text-align: center;
+}
+
+.header-stats .stat-number {
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fbbf24;
+    margin-bottom: 5px;
+}
+
+.header-stats .stat-label {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Template Filters */
+.template-filters {
+    background: white;
+    padding: 30px 0;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 70px;
+    z-index: 50;
+}
+
+.filters-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.filter-label {
+    font-weight: 600;
+    color: #374151;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.filter-options {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    border: 2px solid #e5e7eb;
+    background: white;
+    color: #6b7280;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.filter-btn:hover {
+    border-color: #d1d5db;
+    color: #374151;
+}
+
+.filter-btn.active {
+    border-color: #2563eb;
+    background: #2563eb;
+    color: white;
+}
+
+.filter-select {
+    padding: 8px 12px;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    background: white;
+    color: #374151;
+    font-size: 14px;
+    cursor: pointer;
+    min-width: 140px;
+}
+
+.filter-select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* Templates Section */
+.templates-section {
+    padding: 60px 0;
+    background: #f8fafc;
+}
+
+.templates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 30px;
+}
+
+/* Template Card */
+.template-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.template-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.template-preview {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    background: #f8fafc;
+}
+
+.preview-container {
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.7);
+    transform-origin: center;
+}
+
+.template-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.template-card:hover .template-overlay {
+    opacity: 1;
+}
+
+.template-actions {
+    display: flex;
+    gap: 12px;
+}
+
+/* Template Previews */
+.template-professional,
+.template-modern,
+.template-minimal,
+.template-executive,
+.template-technical,
+.template-creative {
+    width: 280px;
+    height: 360px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 20px;
+    font-size: 8px;
+    line-height: 1.2;
+    color: #000;
+    overflow: hidden;
+}
+
+/* Professional Template */
+.template-professional .template-header {
+    text-align: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000;
+}
+
+.template-professional .template-name {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    letter-spacing: 1px;
+}
+
+.template-professional .template-title {
+    font-size: 10px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.template-professional .template-contact {
+    font-size: 7px;
+    color: #666;
+}
+
+.template-professional .section-title {
+    font-size: 9px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #ccc;
+    text-transform: uppercase;
+}
+
+/* Modern Template */
+.template-modern {
+    display: flex;
+    padding: 0;
+}
+
+.template-modern .template-sidebar {
+    width: 35%;
+    background: #2563eb;
+    color: white;
+    padding: 15px;
+}
+
+.template-modern .template-main {
+    width: 65%;
+    padding: 15px;
+}
+
+.template-modern .template-name {
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.template-modern .template-title {
+    font-size: 8px;
+    opacity: 0.9;
+    margin-bottom: 10px;
+}
+
+.template-modern .section-title {
+    font-size: 7px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.template-modern .contact-item,
+.template-modern .skill-item {
+    font-size: 6px;
+    margin-bottom: 3px;
+}
+
+/* Minimal Template */
+.template-minimal .template-header {
+    margin-bottom: 15px;
+}
+
+.template-minimal .template-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+.template-minimal .template-contact {
+    font-size: 7px;
+    color: #666;
+}
+
+.template-minimal .section-title {
+    font-size: 8px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Executive Template */
+.template-executive .template-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+
+.template-executive .template-name {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.template-executive .template-title {
+    font-size: 9px;
+    color: #666;
+}
+
+.template-executive .contact-line {
+    font-size: 7px;
+    color: #666;
+    text-align: right;
+}
+
+.template-executive .section-title {
+    font-size: 9px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+/* Technical Template */
+.template-technical .template-header {
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.template-technical .template-name {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.template-technical .template-title {
+    font-size: 8px;
+    color: #666;
+    margin-bottom: 4px;
+}
+
+.template-technical .template-contact {
+    font-size: 6px;
+    color: #666;
+}
+
+.template-technical .two-column {
+    display: flex;
+    gap: 10px;
+}
+
+.template-technical .left-column {
+    width: 40%;
+}
+
+.template-technical .right-column {
+    width: 60%;
+}
+
+.template-technical .skill-category {
+    margin-bottom: 5px;
+}
+
+.template-technical .skill-cat-title {
+    font-size: 6px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.template-technical .skill-items {
+    font-size: 5px;
+    color: #666;
+}
+
+/* Creative Template */
+.template-creative .template-header {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.template-creative .template-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #7c3aed;
+    margin-bottom: 3px;
+}
+
+.template-creative .template-title {
+    font-size: 9px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.template-creative .header-line {
+    height: 2px;
+    background: linear-gradient(to right, #7c3aed, #a855f7);
+    width: 60px;
+}
+
+.template-creative .section-title {
+    font-size: 8px;
+    font-weight: bold;
+    color: #7c3aed;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.template-creative .exp-item {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.template-creative .exp-badge {
+    background: #7c3aed;
+    color: white;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-size: 5px;
+    font-weight: bold;
+    height: fit-content;
+}
+
+.template-creative .exp-content {
+    flex: 1;
+}
+
+.template-creative .exp-title {
+    font-size: 7px;
+    font-weight: bold;
+    margin-bottom: 1px;
+}
+
+.template-creative .exp-company {
+    font-size: 6px;
+    color: #666;
+    margin-bottom: 2px;
+}
+
+/* Common Template Elements */
+.template-section {
+    margin-bottom: 10px;
+}
+
+.content-line {
+    height: 2px;
+    background: #e5e7eb;
+    margin-bottom: 2px;
+    border-radius: 1px;
+}
+
+.content-line.short {
+    width: 70%;
+}
+
+.exp-item {
+    margin-bottom: 8px;
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 2px;
+}
+
+.exp-title {
+    font-size: 7px;
+    font-weight: bold;
+}
+
+.exp-company {
+    font-size: 6px;
+    color: #666;
+    margin-bottom: 2px;
+}
+
+.exp-date {
+    font-size: 6px;
+    color: #666;
+}
+
+.exp-meta {
+    font-size: 6px;
+    color: #666;
+    margin-bottom: 2px;
+}
+
+/* Template Info */
+.template-info {
+    padding: 24px;
+}
+
+.template-info h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 8px;
+}
+
+.template-info p {
+    color: #6b7280;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+}
+
+.template-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.feature-tag {
+    display: inline-block;
+    padding: 4px 8px;
+    background: #f3f4f6;
+    color: #374151;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.template-stats {
+    display: flex;
+    gap: 20px;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.stat-item i {
+    color: #9ca3af;
+}
+
+/* Modal Styles */
+.modal.large .modal-content {
+    max-width: 900px;
+    max-height: 90vh;
+}
+
+.preview-container-large {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    background: #f8fafc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.preview-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .templates-grid {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 20px;
+    }
+    
+    .header-stats {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .templates-header {
+        padding: 100px 0 60px;
+    }
+    
+    .header-content h1 {
+        font-size: 32px;
+    }
+    
+    .header-content p {
+        font-size: 16px;
+    }
+    
+    .header-stats {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    
+    .filters-container {
+        flex-direction: column;
+        gap: 20px;
+        align-items: stretch;
+    }
+    
+    .filter-group {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+    }
+    
+    .filter-options {
+        justify-content: center;
+    }
+    
+    .templates-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .template-preview {
+        height: 250px;
+    }
+    
+    .preview-container {
+        transform: scale(0.6);
+    }
+    
+    .template-actions {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .templates-section {
+        padding: 40px 0;
+    }
+    
+    .template-info {
+        padding: 16px;
+    }
+    
+    .template-stats {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
